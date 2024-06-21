@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/Tv_today"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Testing..."
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="0000년 00월 00일"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 토양 습도"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/Tv_soil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/Tv_soil_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="축축해요"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 물 주기 횟수"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/Tv_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <ImageButton
+        android:id="@+id/Btn_watering"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:text="물 주기"
+        android:background="@drawable/watring"
+        android:contentDescription="btn watring"/>
+
+
+
+
+</LinearLayout>
